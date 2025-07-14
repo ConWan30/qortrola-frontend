@@ -50,7 +50,7 @@ export default function DevelopersPage() {
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     setIsLoading(true)
     try {
-      const response = await fetch("https://qortrola-api-production.up.railway.app/api/v1/developers/register", {
+      const response = await fetch("https://qortrola-api.onrender.com/api/v1/developers/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
