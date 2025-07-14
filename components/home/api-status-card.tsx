@@ -8,13 +8,20 @@ type Status = "loading" | "operational" | "error"
 
 export function ApiStatusCard() {
   const [status, setStatus] = useState<Status>("loading")
+  const [apiVersion, setApiVersion] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchStatus = async () => {
       try {
-        const response = await fetch("https://qortrola-api-production.up.railway.app/api/v1/health")
+        const response = await fetch("https://qortrola-api.onrender.com/api/v1/health")
         if (response.ok) {
-          setStatus("operational")
+          const data = await response.json()
+          if (data.status === "healthy") {
+            setStatus("operational")
+            setApiVersion(data.version)
+          } else {
+            setStatus("error")
+          }
         } else {
           setStatus("error")
         }
@@ -30,7 +37,7 @@ export function ApiStatusCard() {
     switch (status) {
       case "operational":
         return {
-          text: "All Systems Operational",
+          text: `API v${apiVersion || ""} Operational`,
           color: "text-primary",
           dotColor: "bg-primary animate-pulse",
         }
