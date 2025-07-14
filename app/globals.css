@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 235 33% 11%;
+    --foreground: 210 20% 88%;
+
+    --card: 235 33% 15%;
+    --card-foreground: 210 20% 88%;
+
+    --popover: 235 33% 11%;
+    --popover-foreground: 210 20% 88%;
+
+    --primary: 170 100% 50%; /* Neon Green/Cyan */
+    --primary-foreground: 235 33% 11%;
+
+    --secondary: 330 100% 55%; /* Neon Pink/Magenta */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 235 33% 20%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 170 100% 40%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 235 33% 25%;
+    --input: 235 33% 25%;
+    --ring: 170 100% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Same as root for a forced dark theme */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .holographic-border {
+    border: 1px solid transparent;
+    background: linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+      linear-gradient(120deg, hsl(var(--primary)), hsl(var(--secondary))) border-box;
+  }
+}
