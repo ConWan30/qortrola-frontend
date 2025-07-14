@@ -75,8 +75,8 @@ importers:
         specifier: ^0.164.1
         version: 0.164.1
       zod:
-        specifier: ^3.23.6
-        version: 3.23.6
+        specifier: 3.23.8
+        version: 3.23.8
     devDependencies:
       '@types/node':
         specifier: ^22
@@ -2484,8 +2484,8 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
-  zod@3.23.6:
-    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
   zustand@3.7.2:
     resolution: {integrity: sha512-PIJDIZKtokhof+9+60cpockVOq05sJzHCriyvaLBmEJixseQ1a5Kdov6fWZfWOu5SK9c+FhH1jU0tntLxRJYMA==}
@@ -5166,7 +5166,7 @@ snapshots:
 
   yaml@2.8.0: {}
 
-  zod@3.23.6: {}
+  zod@3.23.8: {}
 
   zustand@3.7.2(react@18.0.0):
     optionalDependencies:
