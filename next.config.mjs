@@ -3,9 +3,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // By removing the typescript block, ignoreBuildErrors defaults to false.
+  // This will now show us the real errors during the build.
   images: {
     unoptimized: true,
   },
