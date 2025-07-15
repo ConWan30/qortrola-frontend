@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Gamers", href: "/gamers" },
   { name: "AI Agents", href: "/ai-agents" },
   { name: "Analytics", href: "/analytics" },
+  { name: "Pricing", href: "/pricing" }, // Add this line
   { name: "Docs", href: "/docs" },
 ]
 

@@ -65,6 +65,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/pricing" className="text-base text-muted-foreground hover:text-primary">
+                  Pricing
+                </Link>
+              </li>
+              <li>
                 <Link href="/status" className="text-base text-muted-foreground hover:text-primary">
                   API Status
                 </Link>
