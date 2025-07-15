@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Users, DollarSign, ClipboardList } from "lucide-react"
 import { StatsCard } from "@/components/analytics/stats-card"
 import { MainChart } from "@/components/analytics/main-chart"
-import { HolographicCard } from "../components/ui/holographic-card"
+import { HolographicCard } from "@/components/ui/holographic-card"
 import { Bot } from "lucide-react"
 
 const containerVariants = {
