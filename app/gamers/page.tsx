@@ -19,9 +19,9 @@ export default function GamersPage() {
   return (
     <div className="container mx-auto py-24 px-4 sm:px-6 lg:px-8">
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-        <h1 className="text-6xl md:text-8xl font-bold uppercase tracking-wider text-center">Gamer Portal</h1>
+        <h1 className="text-6xl md:text-8xl font-bold uppercase tracking-wider text-center">Gamer Portal Test</h1>
         <p className="mt-4 text-lg text-muted-foreground font-sans text-center">
-          Your central hub for stats, rewards, and community.
+          If you can see this, the page route is working correctly.
         </p>
       </motion.div>
 
